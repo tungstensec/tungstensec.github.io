@@ -1,46 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Tungsten Sec – Cybersecurity</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    body {
-      background: #181b22;
-      color: #ecf0f1;
-      font-family: 'Segoe UI', 'Arial', sans-serif;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      margin: 0;
-    }
-    .container {
-      text-align: center;
-    }
-    h1 {
-      font-size: 2.5rem;
-      color: #14e7a7;
-      margin-bottom: 0.5rem;
-    }
-    p {
-      font-size: 1.2rem;
-      margin-top: 0.5rem;
-      color: #b2bec3;
-    }
-    .note {
-      margin-top: 2rem;
-      font-size: 1rem;
-      color: #6c7a89;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tungsten Sec - Web & Mobile Penetration Testing</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #001f3f; /* Dark blue */
+            color: #ffffff;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #333333; /* Dark grey */
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+        nav a {
+            color: #ffffff;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .hero {
+            background-color: #001f3f;
+            text-align: center;
+            padding: 60px 20px;
+        }
+        .hero h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+        .hero p {
+            font-size: 1.2em;
+            max-width: 800px;
+            margin: 0 auto 30px;
+        }
+        .btn {
+            background-color: #666666; /* Medium grey */
+            color: #ffffff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .btn:hover {
+            background-color: #999999;
+        }
+        section {
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        section h3 {
+            text-align: center;
+            font-size: 2em;
+            margin-bottom: 30px;
+        }
+        .services {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .service-item {
+            background-color: #333333;
+            padding: 20px;
+            margin: 10px;
+            flex: 1 1 300px;
+            border-radius: 8px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        input, textarea {
+            margin-bottom: 15px;
+            padding: 10px;
+            background-color: #666666;
+            border: none;
+            color: #ffffff;
+        }
+        input[type="submit"] {
+            background-color: #001f3f;
+            cursor: pointer;
+        }
+        footer {
+            background-color: #333333;
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9em;
+        }
+    </style>
 </head>
 <body>
-  <div class="container">
-    <h1>Tungsten Sec</h1>
-    <p>Cybersecurity Company</p>
-    <p class="note">Site construction is in progress.</p>
-  </div>
+    <header>
+        <h1>Tungsten Sec</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#services">Services</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <h2>Protecting Your Digital World</h2>
+        <p>We specialize in Web and Mobile Penetration Testing to uncover vulnerabilities before threats exploit them. Secure your apps and websites with expert insights.</p>
+        <a href="#contact" class="btn">Get a Free Consultation</a>
+    </section>
+
+    <section id="services">
+        <h3>Our Services</h3>
+        <div class="services">
+            <div class="service-item">
+                <h4>Web Penetration Testing</h4>
+                <p>Identify and fix security flaws in your web applications, from SQL injections to XSS attacks.</p>
+            </div>
+            <div class="service-item">
+                <h4>Mobile Penetration Testing</h4>
+                <p>Secure your iOS and Android apps against reverse engineering, data leaks, and more.</p>
+            </div>
+            <div class="service-item">
+                <h4>Custom Security Audits</h4>
+                <p>Tailored assessments to meet your specific needs, ensuring compliance and robust defense.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <h3>About Us</h3>
+        <p>At Tungsten Sec, we're a team of certified cybersecurity experts dedicated to safeguarding businesses from evolving threats. With years of experience in penetration testing, we help clients stay one step ahead of cybercriminals.</p>
+    </section>
+
+    <section id="contact">
+        <h3>Contact Us</h3>
+        <form action="#" method="post">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" rows="5" required></textarea>
+            <input type="submit" value="Send Message">
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Tungsten Sec. All rights reserved.</p>
+    </footer>
 </body>
 </html>
